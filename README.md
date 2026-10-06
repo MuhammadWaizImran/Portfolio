@@ -1,6 +1,6 @@
 ﻿# Muhammad Waiz Imran — Portfolio
 
-Personal portfolio for cloud engineering, data platforms, AI and web projects. Includes a responsive homepage, searchable project gallery, compact case studies, credentials and a private content studio.
+Forward Deployed Engineer portfolio covering workflow discovery, software and data integration, AI applications and end-to-end delivery. Includes a responsive homepage, searchable project gallery, compact case studies, credentials and a private content studio.
 
 Website: https://muhammad-waiz-imran.vercel.app
 

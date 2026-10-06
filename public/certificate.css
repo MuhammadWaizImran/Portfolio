@@ -1,0 +1,14 @@
+body[data-page=certificate]{background:var(--paper);color:var(--ink)}
+body[data-page=certificate] .site-header,body[data-page=certificate] .site-footer,body[data-page=certificate] .mobile-nav{color:var(--white)}
+.credential-hero{padding:24px var(--pad) 48px;min-height:calc(100svh - 220px);background:#101a24;color:var(--white)}
+.credential-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(30px,5vw,80px);align-items:center;padding-top:32px}
+.credential-info{min-width:0}.credential-info>.micro{color:var(--blue)}
+.credential-info h1{font-size:clamp(30px,3.3vw,52px);line-height:1.08;font-weight:500;letter-spacing:-.045em;margin:18px 0 28px;overflow-wrap:anywhere}
+.credential-facts{margin:0;display:grid;gap:14px}.credential-facts>div{display:grid;grid-template-columns:125px minmax(0,1fr);gap:15px;border-bottom:1px solid #ffffff20;padding-bottom:14px}
+.credential-facts dt{font:10px/1.7 var(--mono);text-transform:uppercase;color:#a8c0ca}.credential-facts dd{margin:0;font-size:14px;line-height:1.5}
+.credential-description{font-size:15px;line-height:1.75;color:#bccbd1;white-space:pre-line;margin:25px 0 0}
+.credential-document{margin:0;min-width:0}.credential-document a{display:block;background:#f5f5f0;border:1px solid #ffffff35;border-radius:6px;padding:12px;transition:transform .2s}.credential-document a:hover{transform:translateY(-3px)}
+.credential-document img{width:100%;height:auto;max-height:570px;object-fit:contain}.credential-document figcaption{margin-top:13px;font:10px/1.6 var(--mono);color:#a8bdc6}.credential-document a:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+@media(max-width:800px){.credential-layout{grid-template-columns:1fr;gap:30px}.credential-info h1{max-width:650px}.credential-document{width:100%;max-width:760px;margin:auto}.credential-document img{max-height:500px}.credential-hero{padding-bottom:32px}}
+@media(max-width:480px){.credential-info h1{font-size:32px}.credential-facts>div{grid-template-columns:100px minmax(0,1fr)}.credential-description{font-size:14px}.credential-document a{padding:6px}.credential-hero .case-breadcrumb{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.credential-document a{transition:none;transform:none}}

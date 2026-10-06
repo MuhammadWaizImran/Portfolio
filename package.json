@@ -7,7 +7,7 @@
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",
     "build": "node scripts/build.mjs",
-    "check": "node --check server.mjs && node --check api/index.js && node --check public/app.js && node --check public/admin.js && node --check public/project.js && node scripts/check.mjs"
+    "check": "node --check server.mjs && node --check api/index.js && node --check public/app.js && node --check public/admin.js && node --check public/project.js && node --check public/certificate.js && node scripts/check.mjs"
   },
   "dependencies": {
     "@vercel/blob": "^2.8.0"

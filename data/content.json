@@ -2,12 +2,12 @@
   "site": {
     "name": "Muhammad Waiz Imran",
     "role": "Forward Deployed Engineer",
-    "eyebrow": "KARACHI, PAKISTAN  /  AVAILABLE FOR SELECTED WORK",
+    "eyebrow": "FORWARD DEPLOYED ENGINEERING / KARACHI, PAKISTAN",
     "heroLine1": "MUHAMMAD",
     "heroLine2": "WAIZ IMRAN",
-    "heroDescription": "I work at the edge of engineering and real-world delivery—turning complex cloud, data, and AI challenges into systems people can actually use.",
-    "aboutTitle": "Built for the real world.",
-    "aboutBody": "I am a cloud and data engineer in Karachi, working across AWS, Azure, streaming, and modern data platforms. My practice is hands-on: understand the problem, build the integration, deploy the system, and make it reliable enough to live beyond the demo.",
+    "heroDescription": "I connect software, data and AI around the workflow that needs to work: scoping the problem, building the integration and carrying it through deployment and iteration.",
+    "aboutTitle": "Close to the problem. End to end.",
+    "aboutBody": "I am a Forward Deployed Engineer based in Karachi, with a foundation in cloud and data engineering. My approach starts with the people, workflow and constraints behind a technical problem. I turn those requirements into working software, connect APIs and data platforms, and work through deployment, debugging and iteration. Across my projects, I focus on making the whole system useful, not just getting one component to run.",
     "email": "waizimran2009@gmail.com",
     "location": "Karachi, Pakistan",
     "github": "https://github.com/MuhammadWaizImran",
@@ -15,20 +15,20 @@
     "resume": "/media/resume.pdf",
     "heroVideo": "/media/glass-orb.mp4",
     "meshVideo": "/media/signal-mesh.mp4",
-    "heroStrapline": "Ideas into working systems."
+    "heroStrapline": "From the problem to the working system."
   },
   "services": [
     {
       "title": "Discover",
-      "description": "Get close to the workflow, define the real constraint, and turn ambiguity into an executable plan."
+      "description": "Understand the user, map the workflow and identify the constraint. Define a focused first use case and what a useful result should look like."
     },
     {
-      "title": "Build",
-      "description": "Connect APIs, data, infrastructure, and interfaces into a useful first working system."
+      "title": "Integrate",
+      "description": "Build the application and connect the APIs, data and infrastructure it depends on. Test the complete workflow, including permissions and failure paths."
     },
     {
-      "title": "Deploy",
-      "description": "Ship with observability, security, and a clear path for iteration after launch."
+      "title": "Deliver",
+      "description": "Make deployment repeatable, keep execution observable and document how the system works. Use feedback and operational findings to guide the next iteration."
     }
   ],
   "experience": [
@@ -36,13 +36,13 @@
       "period": "2026 — PRESENT",
       "role": "Cloud & Data Engineer Intern",
       "company": "Zaitoon Ashraf",
-      "detail": "Contributing to cloud and data engineering work across AWS, with a focus on data pipelines, ETL workflows, and the infrastructure that supports them. Working with the team on data integration tasks, connecting the movement of data with the requirements of the wider system.\n\nSupporting ETL workflow optimization and cloud infrastructure management as part of team-led delivery. The role brings together pipeline development, integration, and day-to-day engineering work in a collaborative environment."
+      "detail": "Contributing to AWS cloud and data engineering work, including pipelines, ETL workflows and supporting infrastructure. Working with the team on integration tasks that connect data movement to the requirements of the wider system.\n\nSupporting ETL workflow optimization and cloud infrastructure management as part of team-led delivery. This work develops the integration and troubleshooting foundation behind my FDE practice: understand how the components fit together, investigate issues across those boundaries and keep the complete workflow in view."
     },
     {
       "period": "2025 — 2026",
       "role": "Cloud Data Engineering Apprentice",
       "company": "Saylani Mass IT Training",
-      "detail": "Developed hands-on cloud data engineering experience through building and debugging architectures across ingestion, transformation, warehousing, and analytics. Worked with IoT ingestion and streaming workflows, following data from incoming events through processing into analytical datasets.\n\nBuilt PySpark transformations and connected them with downstream warehousing and analytics workflows. This apprenticeship brought the individual parts of a data platform together: understanding how data arrives, how it is transformed, and how it becomes useful for analysis."
+      "detail": "Built and debugged cloud data architectures across ingestion, transformation, warehousing and analytics. Hands-on work included IoT and streaming workflows, PySpark transformations and connections to downstream analytical systems.\n\nPractised following a requirement through the full technical path, from incoming events to a usable output. This apprenticeship shaped my approach to forward deployed engineering: connect the parts, diagnose integration problems and understand what each implementation enables for the person using it."
     }
   ],
   "projects": [
@@ -50,7 +50,7 @@
       "id": "iot-factory",
       "title": "Industrial IoT, end to end",
       "category": "CLOUD DATA PLATFORM",
-      "summary": "A sensor-to-insight pipeline across AWS services, from MQTT events to transformed datasets and dashboards.",
+      "summary": "Connecting sensor ingestion, cloud processing and dashboards so telemetry can become a usable analytical workflow.",
       "challenge": "Bring live temperature and humidity readings into an analytics-ready cloud architecture.",
       "approach": "Virtual sensors publish through AWS IoT Core; Lambda, DMS, Glue, S3, Athena, and QuickSight form the ingestion, transformation, and insight path.",
       "outcome": "Processed 1,069+ sensor rows in the documented project and reduced Athena query cost by about 80% with Parquet output.",
@@ -73,7 +73,7 @@
       "id": "fraud-lakehouse",
       "title": "Fraud surveillance lakehouse",
       "category": "AI / DATA SYSTEMS",
-      "summary": "A real-time Azure Databricks architecture for market surveillance and explainable anomaly detection.",
+      "summary": "A reference design connecting trade ingestion, anomaly scoring and investigation interfaces for market surveillance.",
       "challenge": "Make high-volume trade activity more observable, governed, and useful for investigation.",
       "approach": "Designed Event Hub ingestion, Delta Lake medallion layers, Spark streaming, model tracking with MLflow, and a governed analytics layer.",
       "outcome": "An end-to-end reference architecture connecting ingestion, features, anomaly scoring, monitoring, and investigation workflows.",
@@ -96,7 +96,7 @@
       "id": "aws-two-tier",
       "title": "Resilient AWS application stack",
       "category": "CLOUD INFRASTRUCTURE",
-      "summary": "A secure two-tier web architecture with automated delivery and private data boundaries.",
+      "summary": "A repeatable application delivery blueprint that brings scaling, database isolation and deployment security together.",
       "challenge": "Deploy a web application that can scale while keeping the database isolated and credentials protected.",
       "approach": "Application Load Balancer, Auto Scaling, Multi-AZ RDS, OIDC-based GitHub Actions, KMS, and Secrets Manager.",
       "outcome": "A repeatable infrastructure and deployment blueprint with keyless CI/CD and high-availability components.",
@@ -119,7 +119,7 @@
       "id": "iot-snowflake",
       "title": "IoT to Snowflake",
       "category": "STREAMING / WAREHOUSE",
-      "summary": "Real-time telemetry ingestion with Kafka, CDC, Snowpipe, and dbt transformations.",
+      "summary": "An end-to-end telemetry workflow connecting devices, change capture and warehouse models to a dashboard.",
       "challenge": "Move changing IoT and transactional data into a warehouse without losing history or context.",
       "approach": "AWS IoT Core, Amazon MSK, Debezium CDC, Snowpipe, and a Bronze–Silver–Gold model.",
       "outcome": "A streaming warehouse design with tested transformations and a live telemetry view.",
@@ -141,7 +141,7 @@
       "id": "stock-kafka",
       "title": "Market data in motion",
       "category": "REAL-TIME ANALYTICS",
-      "summary": "Kafka-powered stock data ingestion feeding S3, Glue, and Athena.",
+      "summary": "Connecting a market-event stream to queryable AWS storage for downstream analysis.",
       "challenge": "Turn incoming market events into query-ready analytical data.",
       "approach": "A Python producer and Kafka consumers land raw events in S3, with Glue cataloging and Athena queries.",
       "outcome": "A working event-streaming pattern from producer to analytical query.",
@@ -161,7 +161,7 @@
       "id": "currency-etl",
       "title": "Currency data, on schedule",
       "category": "SERVERLESS ETL",
-      "summary": "A scheduled AWS pipeline landing exchange rates in Snowflake.",
+      "summary": "Replacing manual exchange-rate collection with a scheduled API-to-warehouse integration.",
       "challenge": "Remove manual exchange-rate collection and create a dependable analytical feed.",
       "approach": "EventBridge invokes Lambda; data lands in S3 and moves into structured Snowflake layers.",
       "outcome": "An automated, observable ETL blueprint with managed secrets.",
@@ -182,7 +182,7 @@
       "id": "redshift-etl",
       "title": "Orchestrated Redshift ETL",
       "category": "DATA ORCHESTRATION",
-      "summary": "A fault-aware AWS Step Functions and Glue pipeline into Redshift.",
+      "summary": "Coordinating warehouse ingestion and transformation with visible execution and explicit failure handling.",
       "challenge": "Coordinate warehouse loading with visible recovery paths.",
       "approach": "Step Functions orchestrates PySpark Glue jobs, failure alerts, and Redshift loading.",
       "outcome": "A repeatable pipeline design with explicit failure handling.",
@@ -203,7 +203,7 @@
       "id": "scd-snowflake",
       "title": "Customer history, preserved",
       "category": "DATA WAREHOUSING",
-      "summary": "Near-real-time customer updates with SCD Type 1 and Type 2 in Snowflake.",
+      "summary": "Keeping current customer records and historical changes available within one warehouse workflow.",
       "challenge": "Maintain a current customer view without losing an auditable history.",
       "approach": "NiFi ingestion, S3, Snowpipe, Snowflake Streams and Tasks, and MERGE logic.",
       "outcome": "A warehouse pattern for current-state reporting and historical analysis.",
@@ -222,7 +222,7 @@
       "id": "fmp-etl",
       "title": "Financial data, automated",
       "category": "FINANCIAL ETL",
-      "summary": "Airflow orchestration for Financial Modeling Prep API data.",
+      "summary": "Automating financial-data collection, warehouse loading and run notifications through an Airflow workflow.",
       "challenge": "Keep financial datasets current without a daily manual run.",
       "approach": "Airflow coordinates API extraction, S3 landing, Snowflake loading, and alerts.",
       "outcome": "A scheduled data flow with visible runs and failure signals.",
@@ -243,7 +243,7 @@
       "id": "s3-snowflake",
       "title": "Secure warehouse loading",
       "category": "WAREHOUSE SECURITY",
-      "summary": "Role-based S3 to Snowflake ingestion without long-lived keys.",
+      "summary": "A reusable storage-to-warehouse integration that separates data access, parsing and loading.",
       "challenge": "Load storage data into the warehouse without scattering credentials.",
       "approach": "IAM trust, Snowflake Storage Integration, stages, file formats, and repeatable COPY INTO scripts.",
       "outcome": "A reusable security-first bulk-loading framework.",
@@ -264,7 +264,7 @@
       "id": "fabric-infrastructure",
       "title": "Microsoft Fabric data infrastructure",
       "category": "CLOUD DATA PLATFORM",
-      "summary": "An Azure and Microsoft Fabric blueprint connecting multicloud sources, OneLake, warehouse analytics and real-time intelligence.",
+      "summary": "A platform blueprint and offline demo for connecting multicloud sources to governed Microsoft Fabric analytics.",
       "stack": [
         "Microsoft Fabric",
         "Azure",
@@ -288,7 +288,7 @@
       "id": "ecommerce-airflow",
       "title": "E-commerce data orchestration",
       "category": "DATA ORCHESTRATION",
-      "summary": "Orders and customers move from Firehose and S3 into batch-tracked Snowflake reporting tables, coordinated by Airflow.",
+      "summary": "Connecting order and customer files to reporting tables with traceable batches and a clear processing lifecycle.",
       "stack": [
         "Airflow",
         "Firehose",
@@ -311,7 +311,7 @@
       "id": "pakwheels-analytics",
       "title": "PakWheels market intelligence",
       "category": "DATA ANALYTICS",
-      "summary": "A Python pipeline that turns vehicle listings into cleaned datasets and an interactive automotive analytics dashboard.",
+      "summary": "Turning inconsistent vehicle listings into a searchable analytics workflow for exploring the automotive market.",
       "stack": [
         "Python",
         "BeautifulSoup",
@@ -331,7 +331,7 @@
       "id": "nouvelle-spaces",
       "title": "Nouvelle Spaces studio",
       "category": "WEB EXPERIENCE",
-      "summary": "A cinematic architecture and interiors portfolio with an immersive gallery and a private content management studio.",
+      "summary": "Connecting an architecture studio's public portfolio with a private workflow for managing projects and media.",
       "stack": [
         "JavaScript",
         "CSS",
@@ -339,7 +339,7 @@
         "Vercel",
         "Vercel Blob"
       ],
-      "challenge": "Present an architecture studio?s visual work with cinematic impact while keeping projects and media manageable by the studio team.",
+      "challenge": "Present an architecture studio's visual work with cinematic impact while keeping projects and media manageable by the studio team.",
       "approach": "The homepage combines architectural films and interactive sections. A filterable gallery opens a fullscreen viewer with keyboard navigation, responsive images and reduced-motion support. A private CMS manages content and media.",
       "outcome": "A public studio portfolio and authenticated publishing workflow, with draft previews, version restore and a responsive gallery covering 22 projects and 138 views.",
       "details": "The editor manages project image order, page copy, links, hero films, metadata and gallery colours. The Node service supports persistent local storage; the Vercel implementation uses authenticated serverless routes and private Blob storage. Inquiry forms prepare email drafts for visitors to review and send.",
@@ -353,7 +353,7 @@
       "id": "saylani-portal",
       "title": "Saylani intelligence portal",
       "category": "WEB / AI SYSTEMS",
-      "summary": "One role-based portal for training operations, trainer workflows, donor impact and an AI operations assistant.",
+      "summary": "Bringing training administration, trainer tasks and donor views into one role-aware application with an AI assistant.",
       "stack": [
         "Next.js",
         "React",
@@ -375,7 +375,7 @@
       "id": "social-analytics",
       "title": "Multi-source social analytics",
       "category": "REAL-TIME ANALYTICS",
-      "summary": "A multi-source streaming pipeline bringing weather, IoT, traffic, news and financial signals into analytical models.",
+      "summary": "Connecting heterogeneous API feeds, streaming transformations and analytical models in one documented platform.",
       "stack": [
         "Kafka",
         "Flink",
@@ -400,7 +400,7 @@
       "id": "weather-etl",
       "title": "Weather data, on schedule",
       "category": "DATA ORCHESTRATION",
-      "summary": "A containerized Airflow workflow that extracts OpenWeather readings, transforms them in Python and loads PostgreSQL.",
+      "summary": "Replacing manual weather-data collection with a reproducible API-to-database workflow and visible task execution.",
       "stack": [
         "OpenWeather",
         "Airflow",
@@ -425,7 +425,8 @@
       "issuer": "Microsoft",
       "date": "2026",
       "image": "/media/dp-700.png",
-      "file": "/media/dp-700.png"
+      "file": "/media/dp-700.png",
+      "description": "Microsoft Fabric Data Engineer Associate credential. It supports the data-platform foundation of my FDE practice, where source integration and usable analytical data are part of the same delivery problem."
     },
     {
       "id": "smit",
@@ -433,7 +434,8 @@
       "issuer": "Saylani Mass IT Training",
       "date": "2026",
       "image": "/media/cloud-data-engineering-certificate.png",
-      "file": "/media/cloud-data-engineering-certificate.png"
+      "file": "/media/cloud-data-engineering-certificate.png",
+      "description": "Cloud Data Engineering credential from Saylani Mass IT Training. This learning path supports my hands-on work with cloud infrastructure, pipelines and end-to-end data integration."
     },
     {
       "id": "boomi",
@@ -441,7 +443,8 @@
       "issuer": "Boomi",
       "date": "2026",
       "image": "/media/waiz-imran-boomi-certification.png",
-      "file": "/media/waiz-imran-boomi-certification.png"
+      "file": "/media/waiz-imran-boomi-certification.png",
+      "description": "Associate Integration Developer credential from Boomi. Integration is central to my FDE practice: connecting applications and data around a workflow that needs to work."
     },
     {
       "id": "coding-night",
@@ -449,7 +452,8 @@
       "issuer": "Saylani Mass IT Training",
       "date": "2025",
       "image": "/media/coding-night-certificate.png",
-      "file": "/media/coding-night-certificate.png"
+      "file": "/media/coding-night-certificate.png",
+      "description": "Certificate for Coding Night 2025 at Saylani Mass IT Training. Part of my practical learning journey in building software and working through technical problems."
     },
     {
       "id": "snowflake-engineering",
@@ -457,7 +461,8 @@
       "issuer": "Snowflake",
       "date": "10 Jan 2026",
       "image": "/media/badge-5.png",
-      "file": "/media/badge-5.png"
+      "file": "/media/badge-5.png",
+      "description": "Data Engineering | Hands-on Essentials credential from Snowflake. Part of the data-platform learning that supports my work connecting sources, warehouse workflows and useful applications."
     },
     {
       "id": "snowflake-lake",
@@ -465,7 +470,8 @@
       "issuer": "Snowflake",
       "date": "2 Jun 2026",
       "image": "/media/badge-4.png",
-      "file": "/media/badge-4.png"
+      "file": "/media/badge-4.png",
+      "description": "Data Lake | Hands-on Essentials credential from Snowflake. Part of the data-platform learning that supports my work connecting sources, warehouse workflows and useful applications."
     },
     {
       "id": "snowflake-warehouse",
@@ -473,7 +479,8 @@
       "issuer": "Snowflake",
       "date": "8 Dec 2025",
       "image": "/media/badge-1.png",
-      "file": "/media/badge-1.png"
+      "file": "/media/badge-1.png",
+      "description": "Data Warehouse | Hands-on Essentials credential from Snowflake. Part of the data-platform learning that supports my work connecting sources, warehouse workflows and useful applications."
     },
     {
       "id": "snowflake-applications",
@@ -481,7 +488,8 @@
       "issuer": "Snowflake",
       "date": "13 Dec 2025",
       "image": "/media/badge-3.png",
-      "file": "/media/badge-3.png"
+      "file": "/media/badge-3.png",
+      "description": "Data Applications | Hands-on Essentials credential from Snowflake. Part of the data-platform learning that supports my work connecting sources, warehouse workflows and useful applications."
     },
     {
       "id": "snowflake-collaboration",
@@ -489,7 +497,8 @@
       "issuer": "Snowflake",
       "date": "12 Jan 2026",
       "image": "/media/badge-2.png",
-      "file": "/media/badge-2.png"
+      "file": "/media/badge-2.png",
+      "description": "Collaboration & Marketplace | Hands-on Essentials credential from Snowflake. Part of the data-platform learning that supports my work connecting sources, warehouse workflows and useful applications."
     }
   ],
   "sections": [
