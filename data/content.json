@@ -1,0 +1,746 @@
+{
+  "site": {
+    "name": "Muhammad Waiz Imran",
+    "role": "Forward Deployed Engineer",
+    "eyebrow": "KARACHI, PAKISTAN  /  AVAILABLE FOR SELECTED WORK",
+    "heroLine1": "MUHAMMAD",
+    "heroLine2": "WAIZ IMRAN",
+    "heroDescription": "I work at the edge of engineering and real-world delivery—turning complex cloud, data, and AI challenges into systems people can actually use.",
+    "aboutTitle": "Built for the real world.",
+    "aboutBody": "I am a cloud and data engineer in Karachi, working across AWS, Azure, streaming, and modern data platforms. My practice is hands-on: understand the problem, build the integration, deploy the system, and make it reliable enough to live beyond the demo.",
+    "email": "waizimran2009@gmail.com",
+    "location": "Karachi, Pakistan",
+    "github": "https://github.com/MuhammadWaizImran",
+    "linkedin": "https://www.linkedin.com/in/muhammadwaizimran/",
+    "resume": "/media/resume.pdf",
+    "heroVideo": "/media/glass-orb.mp4",
+    "meshVideo": "/media/signal-mesh.mp4",
+    "heroStrapline": "Ideas into working systems."
+  },
+  "services": [
+    {
+      "title": "Discover",
+      "description": "Get close to the workflow, define the real constraint, and turn ambiguity into an executable plan."
+    },
+    {
+      "title": "Build",
+      "description": "Connect APIs, data, infrastructure, and interfaces into a useful first working system."
+    },
+    {
+      "title": "Deploy",
+      "description": "Ship with observability, security, and a clear path for iteration after launch."
+    }
+  ],
+  "experience": [
+    {
+      "period": "2026 — PRESENT",
+      "role": "Cloud & Data Engineer Intern",
+      "company": "Zaitoon Ashraf",
+      "detail": "Contributing to cloud and data engineering work across AWS, with a focus on data pipelines, ETL workflows, and the infrastructure that supports them. Working with the team on data integration tasks, connecting the movement of data with the requirements of the wider system.\n\nSupporting ETL workflow optimization and cloud infrastructure management as part of team-led delivery. The role brings together pipeline development, integration, and day-to-day engineering work in a collaborative environment."
+    },
+    {
+      "period": "2025 — 2026",
+      "role": "Cloud Data Engineering Apprentice",
+      "company": "Saylani Mass IT Training",
+      "detail": "Developed hands-on cloud data engineering experience through building and debugging architectures across ingestion, transformation, warehousing, and analytics. Worked with IoT ingestion and streaming workflows, following data from incoming events through processing into analytical datasets.\n\nBuilt PySpark transformations and connected them with downstream warehousing and analytics workflows. This apprenticeship brought the individual parts of a data platform together: understanding how data arrives, how it is transformed, and how it becomes useful for analysis."
+    }
+  ],
+  "projects": [
+    {
+      "id": "iot-factory",
+      "title": "Industrial IoT, end to end",
+      "category": "CLOUD DATA PLATFORM",
+      "summary": "A sensor-to-insight pipeline across AWS services, from MQTT events to transformed datasets and dashboards.",
+      "challenge": "Bring live temperature and humidity readings into an analytics-ready cloud architecture.",
+      "approach": "Virtual sensors publish through AWS IoT Core; Lambda, DMS, Glue, S3, Athena, and QuickSight form the ingestion, transformation, and insight path.",
+      "outcome": "Processed 1,069+ sensor rows in the documented project and reduced Athena query cost by about 80% with Parquet output.",
+      "stack": [
+        "AWS IoT Core",
+        "Lambda",
+        "DMS",
+        "PySpark",
+        "S3",
+        "Athena"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/Aws-IOT-Data-Pipeline",
+      "featured": true,
+      "image": "/media/projects/12_AWS-IoT-Data-Pipeline.png",
+      "details": "Virtual sensors publish MQTT readings through IoT Core. Lambda writes to a private MySQL source, Firehose provides an S3 backup, and DMS supports migration and change capture into RDS. Glue transforms exported CSV data into Parquet for Athena queries and QuickSight exploration. The build guide covers networking, secrets, service configuration and troubleshooting.",
+      "documentation": "https://github.com/MuhammadWaizImran/Aws-IOT-Data-Pipeline#readme",
+      "architecture": "/media/architecture/Aws-IOT-Data-Pipeline.png"
+    },
+    {
+      "id": "fraud-lakehouse",
+      "title": "Fraud surveillance lakehouse",
+      "category": "AI / DATA SYSTEMS",
+      "summary": "A real-time Azure Databricks architecture for market surveillance and explainable anomaly detection.",
+      "challenge": "Make high-volume trade activity more observable, governed, and useful for investigation.",
+      "approach": "Designed Event Hub ingestion, Delta Lake medallion layers, Spark streaming, model tracking with MLflow, and a governed analytics layer.",
+      "outcome": "An end-to-end reference architecture connecting ingestion, features, anomaly scoring, monitoring, and investigation workflows.",
+      "stack": [
+        "Azure",
+        "Databricks",
+        "Delta Lake",
+        "Spark",
+        "MLflow",
+        "Power BI"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/Ai-Fraud-Detection-System",
+      "featured": true,
+      "image": "/media/projects/16_AI-Fraud-Detection-System.png",
+      "details": "The reference system combines Bronze raw event capture, Silver validation and enrichment, and Gold analytical features. Its documented model design uses XGBoost, Isolation Forest and a PyTorch autoencoder to examine known manipulation patterns and unusual behaviour. Investigation interfaces cover stocks and crypto. This portfolio describes the project design, without asserting independent production validation or a relationship with a regulator.",
+      "documentation": "https://github.com/MuhammadWaizImran/Ai-Fraud-Detection-System#readme",
+      "architecture": "/media/architecture/Ai-Fraud-Detection-System.png"
+    },
+    {
+      "id": "aws-two-tier",
+      "title": "Resilient AWS application stack",
+      "category": "CLOUD INFRASTRUCTURE",
+      "summary": "A secure two-tier web architecture with automated delivery and private data boundaries.",
+      "challenge": "Deploy a web application that can scale while keeping the database isolated and credentials protected.",
+      "approach": "Application Load Balancer, Auto Scaling, Multi-AZ RDS, OIDC-based GitHub Actions, KMS, and Secrets Manager.",
+      "outcome": "A repeatable infrastructure and deployment blueprint with keyless CI/CD and high-availability components.",
+      "stack": [
+        "AWS VPC",
+        "EC2",
+        "ALB",
+        "RDS",
+        "GitHub Actions",
+        "KMS"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/AWS-Two-Tier-Architecture",
+      "featured": true,
+      "image": "/media/projects/02_AWS-Two-Tier-Architecture.png",
+      "details": "GitHub Actions runs lint, tests and build checks, then uses Packer to prepare an application AMI and Terraform to manage infrastructure. An Application Load Balancer fronts EC2 Auto Scaling instances running Next.js behind Nginx. PostgreSQL RDS uses private subnets and Multi-AZ configuration; OIDC authentication, KMS encryption and Secrets Manager support deployment security.",
+      "documentation": "https://github.com/MuhammadWaizImran/AWS-Two-Tier-Architecture#readme",
+      "architecture": "/media/architecture/AWS-Two-Tier-Architecture.png"
+    },
+    {
+      "id": "iot-snowflake",
+      "title": "IoT to Snowflake",
+      "category": "STREAMING / WAREHOUSE",
+      "summary": "Real-time telemetry ingestion with Kafka, CDC, Snowpipe, and dbt transformations.",
+      "challenge": "Move changing IoT and transactional data into a warehouse without losing history or context.",
+      "approach": "AWS IoT Core, Amazon MSK, Debezium CDC, Snowpipe, and a Bronze–Silver–Gold model.",
+      "outcome": "A streaming warehouse design with tested transformations and a live telemetry view.",
+      "stack": [
+        "IoT Core",
+        "Kafka",
+        "Debezium",
+        "Snowflake",
+        "dbt"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/Hackathon-End-To-End-Project",
+      "featured": false,
+      "image": "/media/projects/14_Hackathon-End-To-End-Project.png",
+      "details": "Python CDK stacks define network, storage, secrets, MSK, compute and IoT resources. Virtual air-quality sensors publish with mutual TLS; Lambda bridges events into Kafka. JDBC Sink writes PostgreSQL records, Debezium captures WAL changes, and an S3 sink lands CDC events. Snowpipe and dbt build Bronze, Silver and Gold layers, with eight documented dbt checks and a Streamlit telemetry dashboard.",
+      "documentation": "https://github.com/MuhammadWaizImran/Hackathon-End-To-End-Project#readme",
+      "architecture": "/media/architecture/Hackathon-End-To-End-Project.png"
+    },
+    {
+      "id": "stock-kafka",
+      "title": "Market data in motion",
+      "category": "REAL-TIME ANALYTICS",
+      "summary": "Kafka-powered stock data ingestion feeding S3, Glue, and Athena.",
+      "challenge": "Turn incoming market events into query-ready analytical data.",
+      "approach": "A Python producer and Kafka consumers land raw events in S3, with Glue cataloging and Athena queries.",
+      "outcome": "A working event-streaming pattern from producer to analytical query.",
+      "stack": [
+        "Kafka",
+        "Python",
+        "S3",
+        "Glue",
+        "Athena"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/Stock-Market-Kafka-Project",
+      "featured": false,
+      "image": "/media/projects/03_Stock-Market-Kafka-Project.png",
+      "documentation": "https://github.com/MuhammadWaizImran/Stock-Market-Kafka-Project#readme"
+    },
+    {
+      "id": "currency-etl",
+      "title": "Currency data, on schedule",
+      "category": "SERVERLESS ETL",
+      "summary": "A scheduled AWS pipeline landing exchange rates in Snowflake.",
+      "challenge": "Remove manual exchange-rate collection and create a dependable analytical feed.",
+      "approach": "EventBridge invokes Lambda; data lands in S3 and moves into structured Snowflake layers.",
+      "outcome": "An automated, observable ETL blueprint with managed secrets.",
+      "stack": [
+        "EventBridge",
+        "Lambda",
+        "S3",
+        "Snowflake"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/s3-Lambda-Eventbridge-Snowflake-Pipeline",
+      "featured": false,
+      "image": "/media/projects/05_S3-Lambda-EventBridge-Snowflake-Pipeline.png",
+      "details": "Lambda retrieves Open Exchange Rates payloads on an EventBridge schedule and preserves the raw JSON in time-partitioned S3 paths. A reusable Snowflake provider invokes stored-procedure loading through RAW, STAGE and FINAL layers. Curated records use timestamp, base currency and target currency as the merge key. Secrets Manager supplies credentials and CloudWatch captures execution logs.",
+      "documentation": "https://github.com/MuhammadWaizImran/s3-Lambda-Eventbridge-Snowflake-Pipeline#readme",
+      "architecture": "/media/architecture/s3-Lambda-Eventbridge-Snowflake-Pipeline.png"
+    },
+    {
+      "id": "redshift-etl",
+      "title": "Orchestrated Redshift ETL",
+      "category": "DATA ORCHESTRATION",
+      "summary": "A fault-aware AWS Step Functions and Glue pipeline into Redshift.",
+      "challenge": "Coordinate warehouse loading with visible recovery paths.",
+      "approach": "Step Functions orchestrates PySpark Glue jobs, failure alerts, and Redshift loading.",
+      "outcome": "A repeatable pipeline design with explicit failure handling.",
+      "stack": [
+        "Step Functions",
+        "Glue",
+        "Redshift",
+        "SNS"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/Redshift-StepFunction-Glue-ETL-Pipeline-",
+      "featured": false,
+      "image": "/media/projects/11_Redshift-StepFunction-Glue-ETL-Pipeline.png",
+      "details": "Four Glue jobs separate extraction, transformation, loading and export. Step Functions coordinates their sequence and failure handling, with SNS alerts and CloudWatch visibility. Redshift sits within private networking; IAM roles and Secrets Manager define access. SQL validation scripts and QuickSight integration complete the documented warehouse workflow.",
+      "documentation": "https://github.com/MuhammadWaizImran/Redshift-StepFunction-Glue-ETL-Pipeline-#readme",
+      "architecture": "/media/architecture/Redshift-StepFunction-Glue-ETL-Pipeline-.png"
+    },
+    {
+      "id": "scd-snowflake",
+      "title": "Customer history, preserved",
+      "category": "DATA WAREHOUSING",
+      "summary": "Near-real-time customer updates with SCD Type 1 and Type 2 in Snowflake.",
+      "challenge": "Maintain a current customer view without losing an auditable history.",
+      "approach": "NiFi ingestion, S3, Snowpipe, Snowflake Streams and Tasks, and MERGE logic.",
+      "outcome": "A warehouse pattern for current-state reporting and historical analysis.",
+      "stack": [
+        "NiFi",
+        "S3",
+        "Snowpipe",
+        "Snowflake"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/SCD-Data-Warehousing-Snowflake",
+      "featured": false,
+      "image": "",
+      "documentation": "https://github.com/MuhammadWaizImran/SCD-Data-Warehousing-Snowflake#readme"
+    },
+    {
+      "id": "fmp-etl",
+      "title": "Financial data, automated",
+      "category": "FINANCIAL ETL",
+      "summary": "Airflow orchestration for Financial Modeling Prep API data.",
+      "challenge": "Keep financial datasets current without a daily manual run.",
+      "approach": "Airflow coordinates API extraction, S3 landing, Snowflake loading, and alerts.",
+      "outcome": "A scheduled data flow with visible runs and failure signals.",
+      "stack": [
+        "Airflow",
+        "Python",
+        "S3",
+        "Snowflake"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/Fmp-ETL-Pipeline-Project",
+      "featured": false,
+      "image": "/media/projects/07_FMP-ETL-Pipeline-Project.png",
+      "details": "The DAG fetches Financial Modeling Prep data for AAPL, GOOGL, MSFT, AMZN and META, writes one JSON object per stock into date-partitioned S3 storage, loads Snowflake and sends an SNS completion notification. Airflow runs in Docker on EC2. The configured schedule is weekdays at 18:00 UTC; execution visibility comes through Airflow task history and logs.",
+      "documentation": "https://github.com/MuhammadWaizImran/Fmp-ETL-Pipeline-Project#readme",
+      "architecture": "/media/architecture/Fmp-ETL-Pipeline-Project.png"
+    },
+    {
+      "id": "s3-snowflake",
+      "title": "Secure warehouse loading",
+      "category": "WAREHOUSE SECURITY",
+      "summary": "Role-based S3 to Snowflake ingestion without long-lived keys.",
+      "challenge": "Load storage data into the warehouse without scattering credentials.",
+      "approach": "IAM trust, Snowflake Storage Integration, stages, file formats, and repeatable COPY INTO scripts.",
+      "outcome": "A reusable security-first bulk-loading framework.",
+      "stack": [
+        "Snowflake",
+        "S3",
+        "IAM",
+        "SQL"
+      ],
+      "github": "https://github.com/MuhammadWaizImran/Snowflake-Loading-Data",
+      "featured": false,
+      "image": "/media/projects/09_Snowflake-Loading-Data.png",
+      "details": "An IAM trust relationship connects S3 to Snowflake through a storage integration, keeping static AWS keys out of warehouse configuration. An external stage and reusable CSV file format separate storage and parsing concerns. COPY INTO loads target tables, with validation queries and troubleshooting guidance for permissions, paths and parsing. Automatic Snowpipe ingestion is listed as a future enhancement in this repository.",
+      "documentation": "https://github.com/MuhammadWaizImran/Snowflake-Loading-Data#readme",
+      "architecture": "/media/architecture/Snowflake-Loading-Data.png"
+    },
+    {
+      "id": "fabric-infrastructure",
+      "title": "Microsoft Fabric data infrastructure",
+      "category": "CLOUD DATA PLATFORM",
+      "summary": "An Azure and Microsoft Fabric blueprint connecting multicloud sources, OneLake, warehouse analytics and real-time intelligence.",
+      "stack": [
+        "Microsoft Fabric",
+        "Azure",
+        "OneLake",
+        "Bicep",
+        "SQL",
+        "KQL",
+        "Power BI"
+      ],
+      "challenge": "Unify database, file and event sources across a shared analytics platform while making governance and cross-tenant consumption explicit.",
+      "approach": "The repository maps source ingestion through mirroring, Data Factory, shortcuts and eventstreams into Lakehouse, Warehouse and Eventhouse destinations. Bronze, Silver and Gold notebooks sit alongside SQL, KQL and semantic-model definitions.",
+      "outcome": "A documented platform blueprint with runnable offline sample processing, infrastructure templates and validation checks. Cloud services have not been deployed; tenant-specific connections remain configuration work.",
+      "details": "Includes source inventories, access matrices, monitoring contracts, deployment runbooks and provider/consumer tenant manifests. Local scripts validate definitions, demonstrate data quality handling and generate an offline deployment plan. Azure Bicep, AWS CloudFormation and GCP Terraform templates document the infrastructure branches.",
+      "github": "https://github.com/MuhammadWaizImran/Fabric-Data-Infrastructure",
+      "featured": false,
+      "image": "/media/architecture/Fabric-Data-Infrastructure.svg",
+      "documentation": "https://github.com/MuhammadWaizImran/Fabric-Data-Infrastructure#readme",
+      "architecture": "/media/architecture/Fabric-Data-Infrastructure.svg"
+    },
+    {
+      "id": "ecommerce-airflow",
+      "title": "E-commerce data orchestration",
+      "category": "DATA ORCHESTRATION",
+      "summary": "Orders and customers move from Firehose and S3 into batch-tracked Snowflake reporting tables, coordinated by Airflow.",
+      "stack": [
+        "Airflow",
+        "Firehose",
+        "S3",
+        "Snowflake",
+        "Python",
+        "SQL"
+      ],
+      "challenge": "Combine incoming order and customer files into a dependable reporting dataset with traceable batches and a clear processing lifecycle.",
+      "approach": "Kinesis Agent and Firehose deliver CSVs to S3 landing prefixes. Airflow moves each batch to processing, loads orders and customers into Snowflake, then joins and aggregates the data before archiving processed files.",
+      "outcome": "A batch pipeline with a shared BATCH_ID across S3 objects and warehouse rows, supporting traceability and replay. Sample files allow the ingestion path to be explored without provisioning Kinesis.",
+      "details": "The DAG separates parallel order/customer preparation from warehouse transformation and archival tasks. Snowflake setup includes a storage integration, CSV file format, external stages, raw tables and the curated ORDER_CUSTOMER_DATE_PRICE table. AWS and Snowflake configuration guides accompany the orchestration code.",
+      "github": "https://github.com/MuhammadWaizImran/Ecommerce-DataPipeline-Orchestrated-With-Airflow",
+      "featured": false,
+      "image": "/media/architecture/Ecommerce-DataPipeline-Orchestrated-With-Airflow.png",
+      "documentation": "https://github.com/MuhammadWaizImran/Ecommerce-DataPipeline-Orchestrated-With-Airflow#readme",
+      "architecture": "/media/architecture/Ecommerce-DataPipeline-Orchestrated-With-Airflow.png"
+    },
+    {
+      "id": "pakwheels-analytics",
+      "title": "PakWheels market intelligence",
+      "category": "DATA ANALYTICS",
+      "summary": "A Python pipeline that turns vehicle listings into cleaned datasets and an interactive automotive analytics dashboard.",
+      "stack": [
+        "Python",
+        "BeautifulSoup",
+        "Pandas",
+        "Streamlit"
+      ],
+      "challenge": "Vehicle listings contain mixed price formats, missing attributes and unstructured descriptions that make meaningful comparisons difficult.",
+      "approach": "A modular scraper extracts listing data with pagination, delays and retry handling. A cleaning stage normalizes PKR prices, extracts brands and vehicle attributes, and prepares a dataset for Streamlit exploration.",
+      "outcome": "An interactive dashboard for comparing average prices, brand distribution, fuel types, transmissions and the relationship between model year and price.",
+      "details": "City, fuel and year filters support focused exploration. The processed schema captures brand, city, model year, mileage, fuel, engine capacity, transmission and numeric price. Logging, environment configuration and separate scrape/clean/dashboard entry points keep the workflow understandable and reusable. The repository presents the scraper for educational research.",
+      "github": "https://github.com/MuhammadWaizImran/Pak-Wheels-Data-Scrapping-And-Analytics",
+      "featured": false,
+      "image": "/media/projects/17_Pak-Wheels-Data-Scrapping-And-Analytics.png",
+      "documentation": "https://github.com/MuhammadWaizImran/Pak-Wheels-Data-Scrapping-And-Analytics#readme"
+    },
+    {
+      "id": "nouvelle-spaces",
+      "title": "Nouvelle Spaces studio",
+      "category": "WEB EXPERIENCE",
+      "summary": "A cinematic architecture and interiors portfolio with an immersive gallery and a private content management studio.",
+      "stack": [
+        "JavaScript",
+        "CSS",
+        "Node.js",
+        "Vercel",
+        "Vercel Blob"
+      ],
+      "challenge": "Present an architecture studio?s visual work with cinematic impact while keeping projects and media manageable by the studio team.",
+      "approach": "The homepage combines architectural films and interactive sections. A filterable gallery opens a fullscreen viewer with keyboard navigation, responsive images and reduced-motion support. A private CMS manages content and media.",
+      "outcome": "A public studio portfolio and authenticated publishing workflow, with draft previews, version restore and a responsive gallery covering 22 projects and 138 views.",
+      "details": "The editor manages project image order, page copy, links, hero films, metadata and gallery colours. The Node service supports persistent local storage; the Vercel implementation uses authenticated serverless routes and private Blob storage. Inquiry forms prepare email drafts for visitors to review and send.",
+      "github": "https://github.com/MuhammadWaizImran/NouvelleSpaces-Website",
+      "featured": false,
+      "image": "/media/upload-1791226826534-8192122ed2.png",
+      "documentation": "https://github.com/MuhammadWaizImran/NouvelleSpaces-Website#readme",
+      "live": "https://nouvellespaces.vercel.app"
+    },
+    {
+      "id": "saylani-portal",
+      "title": "Saylani intelligence portal",
+      "category": "WEB / AI SYSTEMS",
+      "summary": "One role-based portal for training operations, trainer workflows, donor impact and an AI operations assistant.",
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "MongoDB",
+        "Groq",
+        "Tailwind CSS"
+      ],
+      "challenge": "Bring campus, course, student and trainer operations into one interface while giving each role appropriate access to the underlying records.",
+      "approach": "Admin, trainer and donor areas share a MongoDB backend. Verified JWT sessions determine role and identity. A tool-calling AI assistant uses role-scoped operations, with optional voice interaction and document generation.",
+      "outcome": "A unified management application with administrative workflows, trainer-specific views and a read-only donor impact dashboard.",
+      "details": "Student inductions and class slots connect the training data model. Bilingual names support English and Urdu records. Generated DOCX reports are stored in GridFS. Voice uses browser speech recognition and optional ElevenLabs output. The interface reflects available enrolment data without inventing per-student attendance percentages or placement figures.",
+      "github": "https://github.com/MuhammadWaizImran/Saylani-Donor-End-To-End-System",
+      "featured": false,
+      "image": "/media/projects/15_Saylani-Donor-End-To-End-System.png",
+      "documentation": "https://github.com/MuhammadWaizImran/Saylani-Donor-End-To-End-System#readme"
+    },
+    {
+      "id": "social-analytics",
+      "title": "Multi-source social analytics",
+      "category": "REAL-TIME ANALYTICS",
+      "summary": "A multi-source streaming pipeline bringing weather, IoT, traffic, news and financial signals into analytical models.",
+      "stack": [
+        "Kafka",
+        "Flink",
+        "PostgreSQL",
+        "DMS",
+        "Glue",
+        "dbt",
+        "Snowflake",
+        "Airflow"
+      ],
+      "challenge": "Bring heterogeneous API feeds into a common processing path so live events can be transformed and explored together.",
+      "approach": "Python producers feed Kafka topics, with Flink performing stream enrichment and aggregation. PostgreSQL, DMS and Glue form the operational-to-lake path; S3, Athena, dbt and Snowflake support analytics.",
+      "outcome": "A documented end-to-end build spanning ingestion, stream processing, lake storage, warehouse models and BI consumption.",
+      "details": "The guide breaks the platform into incremental implementation phases and ties orchestration together with Airflow. Cataloguing and SQL access are handled through Glue and Athena, while curated models feed Snowflake and BI tools including Power BI, Tableau and Looker Studio.",
+      "github": "https://github.com/MuhammadWaizImran/Social-Analytics-Pipeline",
+      "featured": false,
+      "image": "/media/projects/13_Social-Analytics-Pipeline.png",
+      "documentation": "https://github.com/MuhammadWaizImran/Social-Analytics-Pipeline#readme",
+      "architecture": "/media/architecture/Social-Analytics-Pipeline.png"
+    },
+    {
+      "id": "weather-etl",
+      "title": "Weather data, on schedule",
+      "category": "DATA ORCHESTRATION",
+      "summary": "A containerized Airflow workflow that extracts OpenWeather readings, transforms them in Python and loads PostgreSQL.",
+      "stack": [
+        "OpenWeather",
+        "Airflow",
+        "Python",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "challenge": "Replace manual weather-data collection with an inspectable workflow that separates API extraction, transformation and database loading.",
+      "approach": "An Airflow DAG coordinates the three ETL stages. Docker Compose supplies the reproducible runtime, while Python prepares API readings for structured PostgreSQL storage.",
+      "outcome": "A locally runnable weather ETL project with orchestration, database validation guidance and troubleshooting documentation.",
+      "details": "Environment-based configuration supplies API and database settings. Airflow exposes task states and logs for investigating failures, and GitHub Actions provides syntax validation. The repository documents API-key activation, database readiness and worker configuration issues so the local pipeline can be reproduced more easily.",
+      "github": "https://github.com/MuhammadWaizImran/Weather-ETL-Pipeline",
+      "featured": false,
+      "image": "/media/projects/10_Weather-ETL-Pipeline.png",
+      "documentation": "https://github.com/MuhammadWaizImran/Weather-ETL-Pipeline#readme"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "dp700",
+      "title": "Microsoft Certified: Fabric Data Engineer Associate",
+      "issuer": "Microsoft",
+      "date": "2026",
+      "image": "/media/dp-700.png",
+      "file": "/media/dp-700.png"
+    },
+    {
+      "id": "smit",
+      "title": "Cloud Data Engineering",
+      "issuer": "Saylani Mass IT Training",
+      "date": "2026",
+      "image": "/media/cloud-data-engineering-certificate.png",
+      "file": "/media/cloud-data-engineering-certificate.png"
+    },
+    {
+      "id": "boomi",
+      "title": "Associate Integration Developer",
+      "issuer": "Boomi",
+      "date": "2026",
+      "image": "/media/waiz-imran-boomi-certification.png",
+      "file": "/media/waiz-imran-boomi-certification.png"
+    },
+    {
+      "id": "coding-night",
+      "title": "Coding Night 2025",
+      "issuer": "Saylani Mass IT Training",
+      "date": "2025",
+      "image": "/media/coding-night-certificate.png",
+      "file": "/media/coding-night-certificate.png"
+    },
+    {
+      "id": "snowflake-engineering",
+      "title": "Data Engineering | Hands-on Essentials",
+      "issuer": "Snowflake",
+      "date": "10 Jan 2026",
+      "image": "/media/badge-5.png",
+      "file": "/media/badge-5.png"
+    },
+    {
+      "id": "snowflake-lake",
+      "title": "Data Lake | Hands-on Essentials",
+      "issuer": "Snowflake",
+      "date": "2 Jun 2026",
+      "image": "/media/badge-4.png",
+      "file": "/media/badge-4.png"
+    },
+    {
+      "id": "snowflake-warehouse",
+      "title": "Data Warehouse | Hands-on Essentials",
+      "issuer": "Snowflake",
+      "date": "8 Dec 2025",
+      "image": "/media/badge-1.png",
+      "file": "/media/badge-1.png"
+    },
+    {
+      "id": "snowflake-applications",
+      "title": "Data Applications | Hands-on Essentials",
+      "issuer": "Snowflake",
+      "date": "13 Dec 2025",
+      "image": "/media/badge-3.png",
+      "file": "/media/badge-3.png"
+    },
+    {
+      "id": "snowflake-collaboration",
+      "title": "Collaboration & Marketplace | Hands-on Essentials",
+      "issuer": "Snowflake",
+      "date": "12 Jan 2026",
+      "image": "/media/badge-2.png",
+      "file": "/media/badge-2.png"
+    }
+  ],
+  "sections": [
+    {
+      "id": "top",
+      "title": "Hero",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    },
+    {
+      "id": "method",
+      "title": "Method",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    },
+    {
+      "id": "skills",
+      "title": "Skills",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    },
+    {
+      "id": "work",
+      "title": "Selected projects",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    },
+    {
+      "id": "lab",
+      "title": "Interactive lab",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    },
+    {
+      "id": "credentials",
+      "title": "Credentials",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "visible": true,
+      "heading": "",
+      "body": "",
+      "html": ""
+    }
+  ],
+  "skills": [
+    {
+      "title": "CSS3",
+      "domain": "web",
+      "image": "/media/skills/web/01.png"
+    },
+    {
+      "title": "Flutter",
+      "domain": "web",
+      "image": "/media/skills/web/02.png"
+    },
+    {
+      "title": "Framer",
+      "domain": "web",
+      "image": "/media/skills/web/03.png"
+    },
+    {
+      "title": "GSAP",
+      "domain": "web",
+      "image": "/media/skills/web/04.webp"
+    },
+    {
+      "title": "Kotlin",
+      "domain": "web",
+      "image": "/media/skills/web/05.png"
+    },
+    {
+      "title": "NestJS",
+      "domain": "web",
+      "image": "/media/skills/web/06.webp"
+    },
+    {
+      "title": "Next.js",
+      "domain": "web",
+      "image": "/media/skills/web/07.png"
+    },
+    {
+      "title": "Node.js",
+      "domain": "web",
+      "image": "/media/skills/web/08.webp"
+    },
+    {
+      "title": "HTML5",
+      "domain": "web",
+      "image": "/media/skills/web/09.png"
+    },
+    {
+      "title": "React",
+      "domain": "web",
+      "image": "/media/skills/web/10.png"
+    },
+    {
+      "title": "Vite",
+      "domain": "web",
+      "image": "/media/skills/web/11.webp"
+    },
+    {
+      "title": "AWS",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/01.webp"
+    },
+    {
+      "title": "Apache Kafka",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/02.webp"
+    },
+    {
+      "title": "Apache Spark",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/03.webp"
+    },
+    {
+      "title": "Microsoft Azure",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/04.png"
+    },
+    {
+      "title": "Databricks",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/05.png"
+    },
+    {
+      "title": "dbt",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/06.png"
+    },
+    {
+      "title": "Docker",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/07.webp"
+    },
+    {
+      "title": "Microsoft Fabric",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/08.png"
+    },
+    {
+      "title": "Apache Flink",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/09.png"
+    },
+    {
+      "title": "Looker",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/10.png"
+    },
+    {
+      "title": "Google Cloud",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/11.webp"
+    },
+    {
+      "title": "Power BI",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/12.webp"
+    },
+    {
+      "title": "Python",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/13.webp"
+    },
+    {
+      "title": "Snowflake",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/14.png"
+    },
+    {
+      "title": "SQL Server",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/15.png"
+    },
+    {
+      "title": "Tableau",
+      "domain": "cloud",
+      "image": "/media/skills/cloud/16.png"
+    },
+    {
+      "title": "Groq",
+      "domain": "ai",
+      "image": "/media/skills/ai/01.webp"
+    },
+    {
+      "title": "LangChain",
+      "domain": "ai",
+      "image": "/media/skills/ai/02.png"
+    },
+    {
+      "title": "Anthropic",
+      "domain": "ai",
+      "image": "/media/skills/ai/03.png"
+    },
+    {
+      "title": "XGBoost",
+      "domain": "ai",
+      "image": "/media/skills/ai/04.webp"
+    },
+    {
+      "title": "n8n",
+      "domain": "ai",
+      "image": "/media/skills/ai/05.webp"
+    },
+    {
+      "title": "Ollama",
+      "domain": "ai",
+      "image": "/media/skills/ai/06.png"
+    },
+    {
+      "title": "OpenAI",
+      "domain": "ai",
+      "image": "/media/skills/ai/07.webp"
+    }
+  ],
+  "design": {
+    "css": "",
+    "featuredLimit": 3,
+    "certificateLimit": 3
+  }
+}

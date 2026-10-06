@@ -1,0 +1,22 @@
+{
+  "name": "waiz-fde-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check server.mjs && node --check api/index.js && node --check public/app.js && node --check public/admin.js && node --check public/project.js && node scripts/check.mjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.8.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "description": "Muhammad Waiz Imran ? portfolio and private content studio",
+  "engines": {
+    "node": "24.x"
+  }
+}

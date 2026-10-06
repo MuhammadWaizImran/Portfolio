@@ -1,0 +1,7 @@
+.git
+node_modules
+.archive
+preview
+data/admin.json
+data/backups
+.env*

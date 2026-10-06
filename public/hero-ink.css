@@ -1,0 +1,36 @@
+/* The opening stage borrows Nothin's spare, oversized editorial composition. */
+body[data-page="home"] .site-header{z-index:50}
+.noth-word h1>span{overflow:hidden}
+.noth-word h1 .intro-letter{display:inline-block;will-change:transform}
+.fluid-ready .noth-word h1{opacity:0}
+.noth-hero>.mask-reveal-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+body[data-page="home"] .site-header{height:78px;padding:0 clamp(18px,2.15vw,38px);border:0;justify-content:flex-end;color:#090909;background:transparent}
+body[data-page="home"] .site-header .brand,
+body[data-page="home"] .site-header .desktop-nav,
+body[data-page="home"] .site-header .nav-contact{display:none}
+body[data-page="home"] .site-header .menu-toggle{display:flex;z-index:41;margin-left:auto;width:auto;height:auto;padding:7px 0;border:0;background:transparent;color:#090909;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:-.04em;white-space:nowrap}
+body[data-page="home"] .site-header .menu-toggle::before{content:"MENU ::"}
+body[data-page="home"] .site-header .menu-toggle span{display:none}
+body[data-page="home"].menu-open .site-header .menu-toggle{color:#fff}
+body[data-page="home"] .mobile-nav{position:fixed;z-index:40;inset:0;display:flex;flex-direction:column;justify-content:center;gap:0;padding:clamp(25px,7vw,100px);background:#080808;color:#fff;visibility:hidden;opacity:0;transform:translateY(-2%);transition:opacity .45s ease,transform .45s ease,visibility .45s}
+body[data-page="home"].menu-open .mobile-nav{visibility:visible;opacity:1;transform:none}
+body[data-page="home"] .mobile-nav a{width:fit-content;padding:2px 0;border:0;font-size:clamp(36px,7vw,108px);font-weight:700;letter-spacing:-.075em;line-height:1.12;transition:transform .3s ease,color .3s ease}
+body[data-page="home"] .mobile-nav a:hover{transform:translateX(14px);color:#aeb3b6}
+.noth-hero{position:relative;min-height:520px;height:100vh;height:100svh;overflow:hidden;background:#fff;color:#050505}
+.noth-word{position:absolute;top:48%;left:clamp(12px,2.05vw,34px);right:clamp(12px,2.05vw,34px);transform:translateY(-50%);isolation:isolate;cursor:crosshair;outline:none;touch-action:pan-y}
+.noth-word:focus-visible{outline:2px solid #111;outline-offset:7px}
+.noth-word h1{position:relative;z-index:0;width:100%;max-width:none;margin:0;color:#050505;text-align:center;text-transform:uppercase;font-size:clamp(92px,14.7vw,235px);font-weight:800;letter-spacing:-.092em;line-height:.84;white-space:nowrap;user-select:none}
+.noth-word h1 span{display:block}
+.noth-word canvas{position:absolute;z-index:1;top:-20%;left:0;width:100%;height:140%;pointer-events:none;display:block}
+.noth-foot{position:absolute;z-index:3;left:clamp(18px,2.15vw,38px);right:clamp(18px,2.15vw,38px);bottom:30px;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:end;gap:15px;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.005em;text-transform:uppercase}
+.noth-foot>span{text-align:center}
+.noth-foot-link{width:fit-content;border-bottom:1px solid transparent;padding-bottom:3px;transition:border-color .25s}
+.noth-foot-link:hover{border-color:currentColor}
+.noth-social{display:flex;justify-content:flex-end;gap:10px}
+.noth-social a{border-bottom:1px solid transparent;padding-bottom:3px;transition:border-color .25s}
+.noth-social a:hover{border-color:currentColor}
+.noth-scroll{position:absolute;z-index:3;left:50%;bottom:73px;transform:translateX(-50%);font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.08em;white-space:nowrap}
+.noth-scroll span{display:inline-block;margin-left:8px;animation:bob 2s ease-in-out infinite}
+@media(max-width:760px){body[data-page="home"] .site-header{height:65px}.noth-hero{min-height:600px}.noth-word{top:47%;left:14px;right:14px}.noth-word h1{font-size:clamp(28px,9.4vw,71px);letter-spacing:-.055em;line-height:1.06}.noth-foot{bottom:22px;grid-template-columns:1fr 1fr;font-size:9px}.noth-foot>span{display:none}.noth-social{gap:6px}.noth-scroll{bottom:70px;font-size:9px}}
+@media(max-width:380px){.noth-word h1{font-size:9.4vw}.noth-foot{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.noth-scroll span{animation:none}body[data-page="home"] .mobile-nav{transition:none}}

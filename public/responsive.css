@@ -1,0 +1,85 @@
+/* Responsive overrides only: desktop visual styling remains in its original files. */
+@media(max-width:1050px){
+  .manifesto-grid,.experience-grid{gap:40px}
+  .manifesto-copy,.featured-copy,.work-heading>*,.credentials-head>*{min-width:0}
+  .method-item{grid-template-columns:50px minmax(0,1fr) minmax(0,1.2fr)}
+  .archive-project{grid-template-columns:35px minmax(0,1fr) minmax(0,1fr) auto;gap:18px;padding:28px}
+  .archive-project>*,.project-detail>*{min-width:0}
+}
+@media(max-width:1000px){
+  /* Give the copy and touch canvas their own space on tablets and phones. */
+  .glass-chapter{height:auto;min-height:0}
+  .glass-heading{position:relative;left:auto;top:auto;max-width:none;padding:65px var(--pad) 0}
+  .glass-heading p{max-width:500px;margin-bottom:0}
+  .glass-chapter iframe{position:relative;display:block;height:560px;inset:auto}
+}
+@media(max-width:760px){
+  .section-label{align-items:flex-start;line-height:1.65;gap:16px}
+  .section-label>span{min-width:0;flex:1}
+  .section-label>span:last-child{text-align:right}
+  .manifesto-grid,.experience-grid{gap:35px}
+  .method-item{grid-template-columns:34px minmax(0,1fr)}
+  .method-item p{grid-column:2}
+  .featured-card{grid-template-columns:minmax(0,1fr)}
+  .featured-copy{min-width:0;min-height:0}
+  .featured-meta{flex-wrap:wrap;gap:10px;font-size:10px;line-height:1.6}
+  .featured-links{flex-wrap:wrap;gap:14px 24px}
+  .featured-links a{display:inline-flex;align-items:center;min-height:44px}
+  .architecture-caption{flex-wrap:wrap;gap:8px;left:22px;right:22px;line-height:1.5}
+  .architecture{width:85%;max-width:420px}
+  .glass-chapter iframe{height:520px}
+  .contact-mail{max-width:100%;overflow-wrap:anywhere;align-items:center;gap:10px}
+  .contact-mail span{flex:none}
+  .contact-bottom{gap:24px;align-items:center}
+  .contact-bottom a,.site-footer a{display:inline-flex;align-items:center;min-height:44px}
+  .site-footer{align-items:center;line-height:1.7}
+  .mobile-nav{max-height:100dvh;overflow-y:auto;overscroll-behavior:contain}
+  body.menu-open{overflow:hidden}
+  body[data-page="home"] .site-header .menu-toggle{min-height:44px;min-width:44px}
+  body[data-page="home"] .mobile-nav{padding-top:max(80px,env(safe-area-inset-top));padding-bottom:max(24px,env(safe-area-inset-bottom))}
+  body[data-page="home"] .mobile-nav a{min-height:44px}
+  .noth-foot{bottom:max(16px,env(safe-area-inset-bottom));align-items:center;row-gap:8px}
+  .noth-foot>span{display:block;grid-column:1/-1;grid-row:1}
+  .noth-foot-link,.noth-social a{display:inline-flex;min-height:44px;align-items:center}
+  .noth-social{align-items:center}
+  .noth-scroll{bottom:110px;padding:12px 0}
+  .archive-project{grid-template-columns:28px minmax(0,1fr);padding:24px;gap:16px}
+  .archive-project>div:nth-of-type(2),.archive-project .open,.project-detail{grid-column:2}
+  .project-detail{grid-template-columns:minmax(0,1fr)}
+  .archive-project .open{justify-self:start;min-height:44px;display:flex;align-items:center}
+  .archive-toolbar{align-items:stretch}
+  .archive-toolbar p{line-height:1.7}
+  .search-box input{min-width:0;font-size:16px}
+  .filters button{min-height:44px;max-width:100%;overflow-wrap:anywhere}
+  .cert-dialog{width:calc(100% - 28px);max-width:600px;max-height:calc(100dvh - 28px);padding:18px;overflow:auto}
+  .cert-dialog img{width:100%;max-height:60dvh}
+  .dialog-close{min-height:44px;padding:10px}
+}
+@media(max-width:480px){
+  .manifesto h2,.work h2,.credentials h2,.experience h2{font-size:clamp(40px,10.4vw,52px)}
+  .featured-copy{padding:24px}
+  .featured-copy h3{font-size:clamp(32px,8.4vw,42px);overflow-wrap:break-word}
+  .visual-label{left:18px;right:18px;gap:15px;font-size:9px;line-height:1.6}
+  .skills-intro h2{font-size:clamp(44px,12vw,58px)}
+  .skills-intro-aside{flex-wrap:wrap;gap:20px}
+  .skills-total span{display:block}
+  .skills-jump{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .skills-jump a{min-width:0;padding:16px 8px;gap:6px;font-size:15px}
+  .skills-jump b{font-size:16px}
+  .skills-jump a>span{font-size:8px}
+  .skill-domain-heading h3{font-size:clamp(34px,9.7vw,44px)}
+  .skill-orbit{width:54px;height:54px;right:0;top:-8px}
+  .skill-grid{gap:10px}
+  .skill-name{overflow-wrap:anywhere}
+  .contact h2{font-size:clamp(60px,18vw,72px)}
+  .archive-hero{padding-top:75px}
+  .archive-hero h1{font-size:clamp(42px,12vw,60px);overflow-wrap:normal}
+  .archive-project{padding:20px;gap:12px;grid-template-columns:22px minmax(0,1fr)}
+  .archive-project h2{font-size:clamp(24px,7vw,29px);overflow-wrap:break-word}
+  .archive-toolbar p+p{margin-top:12px}
+  .cert-card{padding:20px}
+}
+@media(max-width:1000px) and (max-height:500px){
+  body[data-page="home"] .mobile-nav{justify-content:flex-start;gap:4px}
+  body[data-page="home"] .mobile-nav a{font-size:32px;line-height:1.2}
+}

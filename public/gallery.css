@@ -1,0 +1,32 @@
+.archive-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;background:none;border:0}
+.gallery-card{min-width:0;border:1px solid #bbc5c7;background:#151e28;color:#fff;border-radius:8px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.gallery-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #08101922}
+.gallery-open{display:flex;flex-direction:column;width:100%;height:100%;padding:0;border:0;background:none;color:inherit;text-align:left;font:inherit;cursor:pointer}
+.gallery-open:focus-visible{outline:3px solid #93e2ed;outline-offset:-3px}
+.gallery-art{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#101a24;display:grid;place-items:center}
+.gallery-art>img{width:100%;height:100%;object-fit:contain;display:block}
+.gallery-art .architecture{width:80%;gap:4px}.gallery-art .architecture-caption{bottom:14px;left:16px;right:16px;font-size:8px}
+.gallery-copy{padding:23px;display:flex;flex-direction:column;flex:1}
+.gallery-meta{font:9px/1.6 var(--mono);letter-spacing:.045em;color:#a6cdd7;display:flex;justify-content:space-between;gap:10px}
+.gallery-meta>span:last-child{font-size:19px;line-height:1}
+.gallery-copy h2{font-size:clamp(23px,2vw,31px);font-weight:500;letter-spacing:-.045em;line-height:1.15;margin:16px 0 12px}
+.gallery-copy>p{font-size:13px;line-height:1.65;color:#c0cdd3;margin:0 0 20px}
+.gallery-tags{display:flex;flex-wrap:wrap;gap:6px}.gallery-tags span{border:1px solid #ffffff30;border-radius:20px;padding:6px 9px;font:9px/1.3 var(--mono);color:#c6d7dd}
+.gallery-copy .gallery-tags{margin-top:auto}.gallery-cta{display:flex;justify-content:space-between;margin-top:21px;border-top:1px solid #ffffff20;padding-top:16px;font:10px var(--mono);letter-spacing:.06em}
+.project-modal-open{overflow:hidden}.project-dialog{width:min(900px,calc(100% - 40px));max-width:none;max-height:90dvh;overflow:auto;padding:32px;border:1px solid #456071;border-radius:10px;background:#111b26;color:#edf3f5;box-shadow:0 30px 100px #0008}
+.project-dialog::backdrop{background:#060c13d9}
+.project-dialog-top{display:flex;align-items:center;justify-content:space-between;gap:20px;font:10px var(--mono);color:#a6cdd7}
+.project-close{background:none;border:1px solid #ffffff40;color:white;min-height:44px;padding:0 14px;font:10px var(--mono);cursor:pointer}
+.project-dialog h2{font-size:clamp(32px,4.8vw,58px);font-weight:500;line-height:1.1;letter-spacing:-.055em;margin:28px 0 18px}
+.project-dialog-summary{font-size:17px;line-height:1.7;color:#c3d0d5}.project-cover{display:block;width:100%;max-height:480px;object-fit:contain;background:#0a1119;margin-top:28px;border-radius:4px}
+.project-story{display:grid;grid-template-columns:1fr;gap:22px;margin:32px 0}.project-story section{border-top:1px solid #ffffff24;padding-top:22px}
+.project-story h3,.project-diagram h3{font:11px var(--mono);letter-spacing:.07em;color:#a4dce8;margin:0 0 12px}.project-story p{font-size:15px;line-height:1.8;white-space:pre-line;margin:0;color:#c6d3d8}
+.project-diagram img{width:100%;height:auto;object-fit:contain;background:white;border-radius:4px}.project-diagram p{font-size:12px;color:#bdcdd4}
+.project-code{display:inline-flex;padding:15px 20px;margin-top:15px;background:#b8e5ec;color:#101923;font:11px var(--mono);text-decoration:none}
+@media(max-width:1050px){.archive-projects{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
+@media(max-width:600px){.archive-projects{grid-template-columns:minmax(0,1fr);gap:20px}.gallery-copy{padding:21px}.gallery-copy h2{font-size:27px}.project-dialog{width:calc(100% - 20px);padding:20px;max-height:calc(100dvh - 20px)}.project-dialog-summary{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.gallery-card{transition:none}.gallery-card:hover{transform:none}}
+
+.gallery-copy>p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.project-resource-links{display:flex;flex-wrap:wrap;gap:12px}.gallery-art .architecture-node{min-width:0;flex:1}.gallery-art .architecture-caption{display:none}
+
+.gallery-open{text-decoration:none}
